@@ -3,8 +3,13 @@ import Home from "./pages/Home";
 import Likes from "./pages/Likes";
 import Music from "./pages/Music";
 import Layout from "./layouts/Layout";
-
+import { useEffect } from "react";
+import { GetToken } from "./components/Utiles";
 function App() {
+  useEffect(() => {
+    GetToken();
+  }, []);
+
   return (
     <div>
       <Routes>
