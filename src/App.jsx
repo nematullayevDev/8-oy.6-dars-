@@ -5,9 +5,19 @@ import Music from "./pages/Music";
 import Layout from "./layouts/Layout";
 import { useEffect } from "react";
 import { GetToken } from "./components/Utiles";
+import { useDispatch } from "react-redux";
+import { create } from "./redux/authSlice";
 function App() {
+  const dispatch = useDispatch();
   useEffect(() => {
-    GetToken();
+    GetToken()
+      .then((res) => {
+        console.log(15, res);
+        dispatch(create(res));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -30,7 +40,7 @@ function App() {
           }
         />
         <Route
-          path="/music"
+          path="/music/:id"
           element={
             <Layout>
               <Music />

@@ -60,25 +60,31 @@ function HomeHeader() {
 
         <UlWrapp>
           <CardWrapp>
-            <LiWrapp className="mb-6">
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover.svg" alt="" width={82} height={82} />
+              <h4>Chill Mix</h4>
             </LiWrapp>
-            <LiWrapp className="mb-6">
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover (1).svg" alt="" width={82} height={82} />
+              <h4>Daily Mix 1</h4>
             </LiWrapp>{" "}
-            <LiWrapp>
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover (2).svg" alt="" width={82} height={82} />
+              <h4>Folk & Acoustic Mix</h4>
             </LiWrapp>
           </CardWrapp>
           <CardWrapp>
-            <LiWrapp className="mb-6">
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover (3).svg" alt="" width={82} height={82} />
+              <h4>Pop Mix</h4>
             </LiWrapp>
-            <LiWrapp className="mb-6">
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover (4).svg" alt="" width={82} height={82} />
+              <h4>Daily Mix 5</h4>
             </LiWrapp>{" "}
-            <LiWrapp>
+            <LiWrapp className="mb-6 flex items-center gap-7 text-white font-semibold text-[20px]">
               <img src="Album Cover (5).svg" alt="" width={82} height={82} />
+              <h4>Daily Mix 4</h4>
             </LiWrapp>
           </CardWrapp>
         </UlWrapp>
