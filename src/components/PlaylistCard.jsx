@@ -1,22 +1,23 @@
 import { useNavigate } from "react-router-dom";
 
 function PlaylistCard(props) {
-  function hanedleRedirect() {
-    const navigate = useNavigate();
-    navigate;
-    `music/${props.data.id}`;
+  const navigate = useNavigate();
+
+  function handleRedirect() {
+    navigate(`music/${props.data.id}`);
   }
+
   return (
     <div
-      className="bg-[#1b1b1b] w-[224px] h-[324px] rounded-lg p-[20px] cursor-pointer"
-      onClick={hanedleRedirect}
+      className="bg-[#1b1b1b] w-[224px] h-[324px] rounded-lg p-[20px] cursor-pointer hover:bg-[#1b1b1be7]"
+      onClick={handleRedirect}
     >
       <div className="img rounded-lg">
         <img
           className="w-[100%] rounded-lg"
           src={props.data.images[0].url}
           alt=""
-          height={180}
+          height={180}  
         />
       </div>
       <div className="desc mt-[25px]">

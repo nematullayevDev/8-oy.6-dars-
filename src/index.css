@@ -10,6 +10,9 @@
   }
   body {
     font-family: sans-serif;
-    
   }
+}
+
+audio {
+  display: none;
 }

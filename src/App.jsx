@@ -12,7 +12,6 @@ function App() {
   useEffect(() => {
     GetToken()
       .then((res) => {
-        console.log(15, res);
         dispatch(create(res));
       })
       .catch((err) => {

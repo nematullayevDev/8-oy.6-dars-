@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import LeftSitebar from "../components/LeftSitebar";
 import RightSitebar from "../components/RightSitebar";
 import styled from "@emotion/styled";
@@ -10,7 +11,7 @@ function Layout({ children }) {
   `;
 
   return (
-    <LayoutWrapper>
+    <LayoutWrapper className="">
       <LeftSitebar />
       {children}
       <RightSitebar />
